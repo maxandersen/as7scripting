@@ -3,6 +3,8 @@
 ## perl -MCPAN -e 'install Bundle::LWP'
 ## perl -MCPAN -e 'install JSON'
 ##
+##
+## Based on Jason Greene's AS7 perl video
 
 use HTTP::Request::Common;
 use LWP::UserAgent;
