@@ -2,9 +2,12 @@
 
 ## This is using raw curl with error handling left as an excersice to the reader. 
 
-hash=`curl -F "file=@pastecode.war;type=application/octet-stream" http://localhost:9990/management/add-content | sed -e "s/.*\"BYTES_VALUE\".*\:.*\"\(.*\)\".*/\1/g"`
+hash=`curl -sS -F "file=@node-info.war;type=application/octet-stream" http://localhost:9990/management/add-content | sed -e "s/.*\"BYTES_VALUE\".*\:.*\"\(.*\)\".*/\1/g"`
 
-content='{"content":[{"hash":{"BYTES_VALUE":"'$hash'"}}],"address":[{"deployment":"pastecode.war"}],"operation":"add","enabled":"true"}'
+echo "The uploaded hash is $hash."
 
-curl -i -X POST -d $content http://localhost:9990/management
+content='{"content":[{"hash":{"BYTES_VALUE":"'$hash'"}}],"address":[{"deployment":"node-info.war"}],"operation":"add","enabled":"true"}'
 
+result=`curl -sS -X POST -d $content http://localhost:9990/management`
+
+echo "Success!!!"

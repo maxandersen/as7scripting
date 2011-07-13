@@ -10,8 +10,8 @@ use HTTP::Request::Common;
 use LWP::UserAgent;
 use JSON;
 
-$filename = 'pastecode.war';
-$deploymentname = 'pastecode.war';
+$filename = 'node-info.war';
+$deploymentname = 'node-info.war';
 
 $ua = LWP::UserAgent->new;
 
