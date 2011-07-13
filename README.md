@@ -8,9 +8,11 @@ same in other languages.
 If you know a language that is not represented here yet then send a pull request :)
 
 
-deploy.pl - Perl, using standard CPAN libraries, @jtgreene
+deploy.pl - Perl, using standard CPAN libraries
 
-deploy.sh - Bash with Curl, @maxandersen
+deploy.sh - Bash with Curl
+
+deploy.rb - Ruby with standard libraries
 
 <your language here> - <pull request>, @author
 
