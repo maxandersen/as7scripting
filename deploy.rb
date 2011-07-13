@@ -3,7 +3,6 @@
 # sudo gem install json rest-client
 
 require 'rubygems'
-require 'yaml'
 require 'rest_client'
 require 'json'
 
