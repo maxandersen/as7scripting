@@ -9,6 +9,8 @@ If you know a language that is not represented here yet then send a pull request
 
 
 deploy.pl - Perl, using standard CPAN libraries, @jtgreene
+
 deploy.sh - Bash with Curl, @maxandersen
+
 <your language here> - <pull request>, @author
 
