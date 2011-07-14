@@ -12,7 +12,7 @@ deploy.pl - Perl, using standard CPAN libraries
 
 deploy.sh - Bash with Curl
 
-deploy.rb - Ruby with standard libraries
+deploy.rb - Ruby with [json](https://rubygems.org/gems/json) and [rest-client](https://rubygems.org/gems/rest-client) gems, @marekgoldmann
 
 <your language here> - <pull request>, @author
 
